@@ -12,7 +12,7 @@ namespace Web.Controllers
     {
         public IActionResult showIndex()
         {
-            return Context("You are having a great day!");
+            return Content("You are having a great day!");
         }
 
         public IActionResult showPrivacy()
@@ -25,11 +25,11 @@ namespace Web.Controllers
 
         public IActionResult showContact()
         {
-            var i = "<!DOCTYPE HTML><html><head><p> You are Awesome! </p></head><body>Have a great day</body></html>";
-            return Context(i,"text/html");
+            var i = "<!DOCTYPE HTML><html><head><p> positive quotations </p></head><body> You're Awesome Have a great day</body></html>";
+            return Content(i,"text/html");
         }
 
-        public IActionResult MyApp()
+        public IActionResult MyComp()
         {
             return View();
         }
